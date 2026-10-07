@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlikler - Kampüs Etkinlikleri</title>
+    <link rel="stylesheet" href="css/2416501035.css">
+    <script type="module" src="js/event-list.js"></script>
+</head>
+
+<body>
+
+   <header class="navbar">
+    <h1>Kampüs Etkinlikleri</h1>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html" class="active">Etkinlikler</a>
+        <a href="etkinlik-ekle.html">Ekle</a>
+    </nav>
+</header>
+
+    <main class="container">
+
+        <h2>Etkinlikler</h2>
+
+        <!-- ADIM 6: Filtre Formu -->
+        <form id="filtre-formu" class="filtre">
+            <div class="filtre-grup">
+                <label for="arama">Etkinlik ara</label>
+                <input type="search" id="arama" placeholder="atölye, kariyer...">
+            </div>
+            
+            <div class="filtre-grup">
+                <label for="kategori-filtre">Kategori</label>
+                <select id="kategori-filtre">
+                    <option value="">Tümü</option>
+                </select>
+            </div>
+        </form>
+
+        <!-- Sonuç Satırı -->
+        <p id="sonuc" class="sonuc-metni"></p>
+
+        <!-- Kartların Geleceği Container -->
+        <section id="etkinlik-listesi" class="events-grid"></section>
+
+    </main>
+
+    <footer>
+        <p>Ad Soyad: Yağmur Lök | Okul No: 2416501035 | 2026</p>
+    </footer>
+
+</body>
+
+</html>

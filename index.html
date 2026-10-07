@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa - Kampüs Etkinlikleri</title>
+    <link rel="stylesheet" href="css/2416501035.css">
+    <!-- Adım 5: event-list modülü -->
+    <script type="module" src="js/event-list.js"></script>
+</head>
+
+<body>
+
+    <!-- ÜST HEADER / NAVBAR -->
+    <header class="navbar">
+        <div class="header-inner">
+            <h1>Kampüs Etkinlikleri</h1>
+            <p class="header-subtitle">Fakültedeki seminer, atölye ve söyleşileri tek yerden takip edin.</p>
+            <nav>
+                <a href="index.html" class="active">Ana Sayfa</a>
+                <a href="etkinlikler.html">Etkinlikler</a>
+                <a href="etkinlik-ekle.html">Ekle</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ANA İÇERİK -->
+    <main class="container">
+
+        <h2>Yaklaşan 2 Etkinlik</h2>
+
+        <!-- JS'in 2 etkinliği sıralayıp basacağı kapsayıcı -->
+        <section id="etkinlik-listesi" class="events-grid home-grid" data-limit="2"></section>
+
+        <!-- Tüm etkinlikler butonu -->
+        <div class="all-events-btn-wrapper">
+            <a href="etkinlikler.html" class="btn-primary">Tüm etkinlikleri gör</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Ad Soyad:Yağmur Lök| Okul No:2416501035 | 2026</p>
+    </footer>
+
+</body>
+
+</html>
